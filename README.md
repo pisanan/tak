@@ -13,7 +13,10 @@ exts：扩展声明，主要用于事件绑定。
 
 可以自由无限扩展各种自定义控件和容器。
 
-主页面内容
+具体效果 看 example.png
+直接打开  example\TestHtml\index.html
+
+主页面源码
 ```
   {
 	svrs:['data/services/empService.js'],
