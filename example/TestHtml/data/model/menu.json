@@ -1,0 +1,86 @@
+{
+	"success": true,
+	"code": "0000",
+	"msg": "请求成功",
+	"data": {
+		"user": {
+			"id":"00001",
+			"name":"测试用户"
+		},
+		"menu": {
+			"name": "tak测试系统",
+			"subs": [
+				{
+					"icon": "icon-home",
+					"name": "首页"
+				}, {
+					"icon": "icon-calendar",
+					"name": "交易管理",
+					"subs": [
+						{
+							"icon": "icon-list",
+							"name": "订单列表",
+							"ctrl":"empM.js",
+							"state":"edit"
+						}, {
+							"icon": "icon-pie-chart",
+							"name": "交易统计",
+							"ctrl":"empM.js",
+							"state":"edit"
+						}
+					]
+				}, {
+					"icon": "icon-settings",
+					"name": "系统设置",
+					"subs": [
+						{
+							"icon": "icon-badge",
+							"name": "部门管理",
+							"ctrl":"empL.js",
+							"state":"edit"
+						}, {
+							"icon": "icon-users",
+							"name": "职员管理",
+							"ctrl":"frameSite.js",
+							"rid":"wangyi"
+						}, {
+							"icon": " icon-user-following",
+							"name": "角色管理",
+							"ctrl":"frameSite.js",
+							"rid":"sina"
+						}, {
+							"icon": "icon-directions",
+							"name": "菜单管理",
+							"ctrl":"frameSite.js",
+							"rid":"baidu"
+						}, {
+							"icon": "icon-key",
+							"name": "权限管理",
+							"subs": [
+								{
+									"icon": "icon-docs",
+									"name": "页面权限",
+									"ctrl":"empL.js",
+									"state":"edit"
+									
+								}, {
+									"icon": "icon-grid",
+									"name": "操作权限",
+									"ctrl":"empL.js",
+									"state":"edit"
+								}
+							]
+						}, {
+							"icon": "icon-equalizer",
+							"name": "系统参数",
+							"ctrl":"empL.js",
+							"state":"edit"
+						}
+					]
+				}
+			]
+		}
+	}
+}
+
+

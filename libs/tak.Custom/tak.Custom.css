@@ -1,0 +1,615 @@
+.input-group{
+	width: 100%;
+}
+.v-content{
+	height: 100%;
+	width: 100%;
+	padding-bottom: 10px;
+}
+
+.portlet{
+	margin-bottom:0;
+}
+.portlet-title{
+	width: 100%;
+}
+/*===================================================容器======================================*/
+.tak-content{
+	background-color: #fff;
+	overflow:auto;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-flow: column nowrap;
+}
+.portlet-title.page{
+	flex: 0 0 auto;
+}
+.tak-content.tak-main-con{
+	flex: 1 1 auto;
+}
+
+.tak-listContent{
+	overflow:hidden;
+	flex-flow:row nowrap;
+	padding: 0;
+}
+.tak-main{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	overflow:hidden;
+}
+.tak-page{
+	z-index: 1;
+	height: 100vh;
+	width: 100vw;
+	margin: 0;
+	padding: 0;
+	overflow:hidden;
+}
+
+.tak-window{
+	position: absolute;
+	-moz-box-shadow:1px 2px 5px #333333; -webkit-box-shadow:1px 2px 5px #333333; box-shadow:1px 2px 5px #333333;
+	border: 1px solid #ccc !important;
+}
+
+.tak-title{
+	width: 100%;
+	height: 50px;
+	flex: 0 0 auto;
+	display: flex;
+	flex-flow:row nowrap;
+	align-items: flex-end;
+	background-color: #2b3643;
+}
+.tak-main-con{
+	display: flex;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	flex-flow:row nowrap;
+}
+.tak-fContent{
+	padding: 1rem;
+	width: 100%;
+	overflow:auto;
+	display: flex;
+	flex-flow:column nowrap;
+	align-items: center;
+}
+.tak-col-fill{
+	flex: 1 1 auto;
+	width: 100%;
+}
+.tak-fContent>.tak-row{
+	width: 100%;
+	align-content:flex-start;
+}
+.tak-sp-content{
+	font-size: 1em;
+	height: 30px;
+	line-height:22px;
+}
+.tak-fd-panel{
+	height: 100%;
+	padding: 0 5px !important;
+	display: flex;
+	flex-flow:row nowrap;
+	align-items: flex-start;
+}
+.tak-fd-panel>textarea{
+	height: 100%;
+}
+.tak-fd-panel>.control-label{
+	width: 4.5em;
+	margin-top: 0.4rem;
+	margin-right: 0.5rem;
+	text-align: right;
+	flex: 0 0 auto;
+	font-size: 1.1em;
+}
+.tak-fd-panel>span{
+	line-height: 2.7rem;
+}
+
+/*===========================================容器结束==================================*/
+
+ /*滚动条样式*/
+/*webkit内核*/
+div::-webkit-scrollbar {
+    width:0.5rem;
+    height:0.5rem;
+}
+div::-webkit-scrollbar-button    {
+	width:0rem;
+    height:0rem;
+    background-color:rgba(0,0,0,0);
+}
+div::-webkit-scrollbar-track     {
+    background-color:rgba(0,0,0,0);
+}
+div::-webkit-scrollbar-track-piece {
+    background-color:rgba(0,0,0,0);
+}
+div::-webkit-scrollbar-thumb{
+    background-color:rgba(168,168,220,0.7);
+    border-radius: 0.3rem;
+    width:0.5rem;
+    height:0.5rem;
+}
+div::-webkit-scrollbar-corner {
+    background-color:rgba(0,0,0,0);
+    width:0rem;
+    height:0rem;
+}
+div::-webkit-scrollbar-resizer  {
+    background-color:rgba(0,0,0,0);
+    width:0rem;
+    height:0rem;
+}
+.tak-list{
+	overflow: auto;
+	border: 1px solid #c2cad8;
+	flex: 1 1 auto;
+	padding: 5px 0 5px 5px;
+}
+.tak-list>*{
+	margin-right: 5px;
+}
+.nowrap{
+	white-space:nowrap;
+}
+ /*图片控件样式*/
+.tak-dImg{
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	flex: 0 0 auto;
+	overflow: hidden;
+	padding: 3px;
+	border: 1px solid darkgray;
+}
+.tak-dImg>img{
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+}
+.tak-fd-unit{
+	width: auto;
+	margin-left: 0.5rem;
+	flex: 0 0 auto;
+}
+.portlet.light>.portlet-title>.actions{
+	padding: 1rem;
+}
+.portlet.light>.portlet-title>.actions{
+	margin-top: 0.5rem;
+	padding: 0.5rem;
+}
+.portlet.light>.portlet-title>.caption{
+	margin-top: 1rem;
+	padding: 0.5rem;
+}
+.portlet.light>.portlet-title{
+	min-height: 2em;
+}
+.btnCon{
+	width: 100%;
+	background-color:#fff;
+	padding: 2rem 5rem;
+	display: flex;
+	flex-flow:row wrap;
+	justify-content:center;
+	flex: 0 0 auto;
+}
+.tak-error{
+	border: 1px solid #e73d4a;
+}
+.swal2-content{
+	white-space:pre-line;
+}
+.toast-message{
+	white-space:pre-line;
+}
+button>i+span{
+	padding-left: 0.5rem;
+}
+
+button>span+i{
+	padding-right: 0.5rem;
+}
+.btnCon>.btn-group+.btn-group{
+	margin-left: 2rem;
+}
+.btnCon>.btn+.btn{
+	margin-left: 2rem;
+}
+.tak-table{
+	margin-bottom: 0;
+}
+.tak-datatable{
+	vertical-align: middle !important;
+}
+.table-scrollable{
+	padding: 0;
+}
+.tak-datatable>tbody>tr>td{
+	text-align:center;
+	
+	vertical-align: middle;
+}
+.tak-datatable>thead>tr>th{
+	text-align:center;
+	background-color:#fff;
+	border-left: 1px solid #e7ecf1;
+}
+
+.tak-tableDiv{
+	overflow: auto;
+	margin: 0 !important;
+	align-self:stretch;
+	min-height: 300px;
+}
+
+.portlet.light{
+	padding: 0rem 0rem;
+}
+
+select{
+	min-width: 5rem;
+}
+
+
+.tak-logo{
+	background-color: #2b3643;
+	width: 100%;
+	height: 50px;
+	flex: 0 0 auto;
+}
+
+/*=======================菜单======================================*/
+.menu-con{
+	background: #364150;
+	height: 100%;
+	z-index: 9999;
+	flex: 0 0 auto;
+	overflow-y: visible;
+}
+.menu-title{
+	padding-left: 5px;
+	display: inline;
+}
+.menu-ul{
+	width: 100%;
+	padding:0;
+	display: block;
+	overflow-y: hidden;
+}
+.menu-li{
+	display: block;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	o-user-select: none;
+  	-moz-user-select: none; /*火狐 firefox*/
+  	-webkit-user-select: none; /*webkit浏览器*/
+  	-ms-user-select: none; /*IE10+*/
+  	-khtml-user-select :none; /*早期的浏览器*/
+  	user-select: none; 
+}
+.menu-li>a,.menu-li>a:hover{
+	display: block;
+	background: #364150;
+	font-size: 14px;
+	text-decoration:none;
+	color: #CCCCCC;
+	padding: 6px 10px 6px 30px;
+	font-size: 15px;
+}
+.menu-li>a:hover{
+	background: #3e4b5c;
+}
+.menu-li>a>span{
+	display: inline;
+}
+.leve3.menu-li>a{
+	padding-left: 50px;
+}
+.leve1.menu-li>a{
+	padding: 10px 10px;
+	border-top: 1px solid #3d4957;
+}
+.leve1.menu-li>a:hover{
+	background: #2C3542;
+}
+.active.menu-li>a{
+	background: #3e4b5c;
+}
+.leve1.active.menu-li>a{
+	background: #36c6d3;
+}
+
+.menu-li>a>i{
+	margin: 0 4px 0 1px;
+	font-size: 16px;
+}
+.menu-li>a>.menu-arrow:before{
+	float: right;
+	width: 20px;
+	height: auto;
+	text-align: center;
+	font-family: FontAwesome;
+	content: '\f104';
+	font-size: 16px;
+	position: relative;
+	right: 5px;
+	display: inline;
+	color: #BBBBBB;
+}
+.nClose.menu-con .leve2>a{
+	padding-left: 10px;
+}
+.nClose.menu-con .leve3>a{
+	padding-left: 35px;
+}
+
+.nClose.menu-con>.menu-ul>.menu-li:hover{
+	width: 220px;
+	position: relative;
+}
+.nClose.menu-con>.menu-ul>.menu-li>a>.menu-title{
+	padding-left: 25px;
+}
+.nClose.menu-con>.menu-ul>.menu-li>a>.menu-arrow:before{
+	content: '';
+}
+.nClose.menu-con>.menu-ul>.menu-li>a>.menu-title{
+	display: none !important;
+}
+.nClose.menu-con>.menu-ul>.menu-li:hover>a>.menu-title{
+	display: inline !important;
+}
+.nClose.menu-con>.menu-ul>.menu-li:hover>.menu-ul{
+	display: block !important;
+	width: 174px;
+	position: absolute;
+	left: 46px;
+	top: 42px;
+}
+.nClose.menu-con>.menu-ul>.menu-li>.menu-ul{
+	display: none;
+}
+.nClose.menu-con>.menu-ul{
+	overflow-y: visible;
+}
+.nOpen>a>.menu-arrow:before{
+	content: '\f107';
+}
+.nOpen.menu-con{
+	width: 220px;
+}
+.nClose.menu-con{
+	width: 45px;
+}
+
+.nOpen.menu-li>.menu-ul{
+	display: block;
+	animation: menuOpen 1s;
+	-webkit-animation: menuOpen 1s;	/* Safari 和 Chrome */
+}
+.nClose.menu-li>.menu-ul{
+	display: none;
+}
+.tak-menu-btn{
+	width: 45px;
+	height: 50px;
+	background: transparent;
+	color: #BBBBBB;
+	font-size: 16px;
+	flex: 0 0 auto;
+	border-left: 1px solid #3d4957;
+}
+.tak-menu-btn:focus{
+	color: #BBBBBB;
+}
+.tak-menu-btn:hover{
+	color: #DDDDDD;
+}
+@keyframes menuOpen
+{
+from {max-height: 1px}
+to {max-height: 2000px}
+}
+@-webkit-keyframes menuOpen /* Safari 和 Chrome */
+{
+from {max-height: 1px}
+to {max-height: 2000px}
+}
+/*=========================================菜单结束=------------------------------------------*/
+.tak-logo-Img{
+	padding: 5px 37px;
+	flex: 0 0 auto;
+}
+.tak-topTool{
+	height: 100%;
+	flex: 1 1 auto;
+	border-left: 1px solid #3d4957;
+	display: flex;
+	align-items: flex-end;
+	flex-flow: row nowrap;
+}
+.tak-topUser{
+	flex: 0 0 auto;
+	padding-right: 10px;
+	display: flex;
+	flex-flow: row nowrap;
+}
+.dropdown-menu>li>.btn{
+	font-size: 14px !important;
+	border-left: 0;
+	width: 100%;
+	text-align: left;
+}
+.dropdown-menu>li>a i{
+ 	width: 15px;
+ 	margin:2px 9px 0 0;
+ 	float: left;
+ }
+
+.tak-top-btn{
+	background: transparent;
+	flex: 0 0 auto;
+	border-left: 1px solid #3d4957;
+}
+.tak-top-btn>.btn{
+	color: #BBBBBB;
+}
+.tak-top-btn>.btn>i{
+	margin-top: 10px;
+}
+.tak-top-btn>.btn:focus{
+	color: #BBBBBB;
+}
+.tak-top-btn>.btn:hover{
+	color: #DDDDDD;
+}
+.tak-top-btn>.btn>span{
+	margin: 0px 5px;
+}
+
+.tak-tab-btn{
+	height: 35px;
+	width: 0px;
+	overflow: hidden;
+	border-left: 1px solid #3d4957;
+	border-radius: 5px 5px 0 0 !important;
+	max-width: 220px;
+	flex: auto;
+	display: flex;
+}
+.tak-tab-btn>.cBtn{
+	flex: 0 0 auto;
+	margin: 7px 6px;
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	color: #BBBBBB;
+}
+.tak-tab-btn>.btn{
+	overflow: hidden;
+	background: transparent;
+	color: #BBBBBB;
+	padding: 6px 0 6px 10px;
+	flex: 1 1 auto;
+	text-align: left;
+}
+.tak-tab-btn>.btn>i+span{
+	padding-left: 5px;
+}
+.tak-tab-btn:focus>.btn{
+	color: #BBBBBB;
+}
+.tak-tab-btn:hover{
+	background: rgba(225,225,225,0.3);
+}
+.tak-tab-btn:hover>.btn{
+	color: #DDDDDD;
+}
+.tak-tab-btn:hover>.cBtn{
+	color: #DDDDDD;
+}
+.tak-tab-btn.active{
+	background: #fff;
+}
+.tak-tab-btn.active>.btn{
+	color: #000;
+}
+.tak-tab-btn.active>.cBtn{
+	color: #000;
+}
+
+
+.tak-tab-btn>.cBtn:hover{
+	border-radius: 50% !important;
+	background: rgba(128,128,128,0.7);
+}
+.tak-FrameV{
+	width: 100%;
+	height: 100%;
+	border: none;
+	margin: 10px;
+}
+
+.tak-CheckBox{
+	display: inline-block;
+	position: relative;
+	height: 18px;
+	cursor: pointer;
+	font-size: 14px;
+	padding-left: 23px;
+	line-height: 17px;
+}
+
+.tak-CheckBox-icon{
+	top: 1px;
+	left: 1px;
+	position: absolute;
+	background: #DDD;
+	border: 1px solid #CCC;
+	width: 16px;
+	height: 16px;
+}
+
+.tak-CheckBox-icon[disabled]{
+	background: #BBB;
+	border: 1px solid #BBB;
+}
+
+.tak-CheckBox-icon:not([disabled]):hover{
+	border-color: #999;
+	background: #EEE;
+}
+.tak-CheckBox.checked>.tak-CheckBox-icon:after{
+	display: block;
+	margin: 1px 0 0 5px;
+	content: '';
+	width: 5px;
+	height: 10px;
+	border: solid #555;
+	border-width: 0 2px 2px 0;
+	transform: rotate(45deg);
+}
+.tak-panelBox{
+	display: flex;
+	flex-flow: column wrap;
+	border: 1px solid #c2cad8;
+	width: 100%;
+	padding: 5px;
+}
+.tak-panelBox.horizon{
+	flex-flow: row wrap;
+}
+.tak-panelBox.horizon>.tak-CheckBox{
+	margin-right: 15px;
+}
+
+.tak-multLvV{
+	display: flex;
+	flex-flow: row wrap;
+	width: 100%;
+	min-height: 30px;
+}
+.tak-multLvV>*{
+	margin-right: 10px;
+	width: auto;
+	flex: 1 1 auto;
+}
+
+.tak-multLvV>:last-child{
+	margin-right: 0;
+}
+

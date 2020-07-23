@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link href="../../libs/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+		<link href="../../libs/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+		<link href="../../libs/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		
+		<link href="../../libs/toastr/toastr.css" rel="stylesheet" type="text/css" />
+		<link href="../../libs/jquery-confirm/jquery-confirm.min.css" rel="stylesheet" type="text/css" />
+		<link href="../1.0/layout/css/layout.css" rel="stylesheet" type="text/css" />
+		<link href="../1.0/global/css/components.min.css" rel="stylesheet" id="style_components" type="text/css" />
+		<link href="../1.0/layout/css/themes/Grey.min.css" rel="stylesheet" type="text/css" id="style_color" />
+		<link href="../../libs/tak/tak.app.css" rel="stylesheet" type="text/css" />
+		<link href="../../libs/tak.Custom/tak.Custom.css" rel="stylesheet" type="text/css" />
+		<link rel="shortcut icon" href="../1.0/global/img/favicon.ico" /> </head>
+	</head>
+	<body>
+	</body>
+	<script src="../../libs/jquery/jquery.min.js" type="text/javascript"></script>
+	<script src="../../libs/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+	
+	<script src="../../libs/toastr/toastr.min.js" type="text/javascript"></script>
+	<script src="../../libs/jquery-confirm/jquery-confirm.min.js" type="text/javascript"></script>
+	<script src="../1.0/global/js/app.js" type="text/javascript"></script>
+	
+	<script src="../1.0/global/js/dxAjax.js" type="text/javascript"></script>
+	<script src="../../libs/tak/tak.app.js" type="text/javascript"></script>
+	<script src="../../libs/tak/tak.views.js" type="text/javascript"></script>
+	<script src="../../libs/tak.Custom/tak.initer.js" type="text/javascript"></script>
+	
+	<script src="../1.0/service/employee.js" type="text/javascript"></script>
+	<script>
+		toastr.options = {
+  			closeButton: true,//是否显示关闭按钮
+  			debug: false, //是否使用debug模式
+  			positionClass: "toast-top-center",//弹出窗的位置
+  			onclick: null,//显示的动画时间
+  			showDuration: "300",//显示的动画时间
+  			hideDuration: "1000",//消失的动画时间
+  			timeOut: "3000",//展现时间
+  			extendedTimeOut: "1000",//加长展示时间
+  			showEasing: "swing",//显示时的动画缓冲方式
+ 			hideEasing: "linear",//消失时的动画缓冲方式
+  			showMethod: "fadeIn",//显示时的动画方式
+  			hideMethod: "fadeOut"//消失时的动画方式
+		};
+		
+		$.takApp.tmpLoader().setBaseUrl('data/tmps/');
+		
+		$.takApp.setOpt({
+			alert:function(iconType,title,msg){
+				if(!iconType)iconType='info';
+				toastr[iconType](msg, title);
+			},
+			confirm:function(iconType,title,msg,then){
+				 $.confirm({
+        			title: title,
+        			content: msg,
+        			icon: 'fa fa-'+iconType,
+        			buttons: {
+            			ok: {
+                			text: '确认',
+                			keys: ['enter'],
+               				btnClass: 'btn-primary',
+                			action: then
+            			},
+            			cancel: {
+                			text: '取消',
+                			keys: ['esc'],
+                			btnClass: 'btn-danger'
+            			}
+        			}
+    			});
+			},
+		});
+		
+		var c=0;
+		var be=function(p){
+			if(!p)return;
+			if(p.disposed==true)return;
+			p.bindEv("closed",function(){
+				if(c>5)return;
+				c++;
+				setTimeout(function(){
+					sl();
+				},1000);
+			});
+		}
+		var sl=function(){
+			be($('body').takPageShow({
+				pType:'Win',
+				title:'职员信息',
+				state:'edit',
+				ctrl:"empL.js"
+			}));
+		}
+		sl();
+	</script>
+</html>

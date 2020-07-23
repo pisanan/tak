@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>click demo</title>
+  <link href="../../libs/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	
+		<link href="../../libs/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		
+		<link href="../1.0/layout/css/layout.css" rel="stylesheet" type="text/css" />
+		<link href="../1.0/global/css/components.min.css" rel="stylesheet" id="style_components" type="text/css" />
+		<link href="../1.0/layout/css/themes/Grey.min.css" rel="stylesheet" type="text/css" id="style_color" />
+		
+</head>
+<body>
+ <!-- index.html -->
+    <input id="file" type="file">
+    <button id="btn">点击上传</button>
+    <img id="img" src="" alt="">
+    <script>
+        var btn = document.getElementById("btn"),
+            file = document.getElementById("file"),
+            img = document.getElementById("img");
+        btn.onclick = function () {
+            // 获取文件
+            var upload_file = file.files[0],
+                formdata = new FormData(),
+                xhr = new XMLHttpRequest();
+            formdata.append('fileName', upload_file.name);
+            // 将文件添加到formdata对象中，（注：下面的file字段名在node中有用）
+            formdata.append('file', upload_file);
+            xhr.open("POST", "http://127.0.0.1:3000/upload/aaa/bbb/ccc", true);
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    img.src = 'http://127.0.0.1:3000/'+xhr.responseText;
+                }
+            }
+            xhr.send(formdata);
+        }
+    </script>
+
+</body>
+</html>

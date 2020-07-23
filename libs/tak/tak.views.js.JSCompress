@@ -1,0 +1,20 @@
+﻿<jscompress public="http://www.jscompress.cn/" command="import-combineset">
+<combinefile path="tak.views.js">
+    <auto value="0" />
+    <sourcefile path=".\ctrls\tabCtrl.js" />
+    <sourcefile path=".\views\filedView.js" />
+    <sourcefile path=".\views\btsPanel.js" />
+    <sourcefile path=".\views\rangeView.js" />
+    <sourcefile path=".\views\image.js" />
+    <sourcefile path=".\views\input.js" />
+    <sourcefile path=".\views\textArea.js" />
+    <sourcefile path=".\views\select.js" />
+    <sourcefile path=".\views\button.js" />
+    <sourcefile path=".\views\titleView.js" />
+    <sourcefile path=".\views\menu.js" />
+    <sourcefile path=".\views\frame.js" />
+    <sourcefile path=".\views\checkBox.js" />
+    <sourcefile path=".\views\chkListBox.js" />
+    <sourcefile path=".\views\multiLevelV.js" />
+</combinefile>
+</jscompress>

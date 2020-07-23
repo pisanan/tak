@@ -1,0 +1,31 @@
+﻿<jscompress public="http://www.jscompress.cn/" command="import-combineset">
+<combinefile path="tak.app.js">
+    <auto value="0" />
+    <sourcefile path=".\core\util.js" />
+    <sourcefile path=".\core\obj.js" />
+    <sourcefile path=".\core\collect.js" />
+    <sourcefile path=".\core\event.js" />
+    <sourcefile path=".\core\filter.js" />
+    <sourcefile path=".\core\convert.js" />
+    <sourcefile path=".\core\service.js" />
+    <sourcefile path=".\core\valid.js" />
+    <sourcefile path=".\core\bind.js" />
+    <sourcefile path=".\core\rend.js" />
+    <sourcefile path=".\core\html.js" />
+    <sourcefile path=".\core\view.js" />
+    <sourcefile path=".\core\list.js" />
+    <sourcefile path=".\core\model.js" />
+    <sourcefile path=".\core\table.js" />
+    <sourcefile path=".\core\tree.js" />
+    <sourcefile path=".\core\ctrl.js" />
+    <sourcefile path=".\core\package.js" />
+    <sourcefile path=".\core\TmpLd.js" />
+    <sourcefile path=".\core\listCtrl.js" />
+    <sourcefile path=".\core\page.js" />
+    <sourcefile path=".\core\app.js" />
+    <sourcefile path=".\extends\loading.js" />
+    <sourcefile path=".\extends\eventExt.js" />
+    <sourcefile path=".\extends\viewTipExt.js" />
+    <sourcefile path=".\core\initer.js" />
+</combinefile>
+</jscompress>
